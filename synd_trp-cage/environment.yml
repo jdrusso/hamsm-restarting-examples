@@ -1,0 +1,13 @@
+name: nacl_restarting
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+ - westpa
+ - pip
+ - pip:
+   - msm_we==0.1.28dev1
+   - synd
+variables:
+  OMP_NUM_THREADS: 1
+  RAY_worker_register_timeout_seconds: 60
